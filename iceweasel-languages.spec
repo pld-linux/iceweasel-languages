@@ -1,5 +1,9 @@
 # TODO:
 #   - do something with *.rdf file, there if file conflict with other lang packages
+#   - 54 more languages (3.5.6):
+#     af ar as be bg bn-BD bn-IN cy en-GB eo es-AR es-CL es-MX et eu fa fy-NL
+#     ga-IE gl gu-IN he hi-IN hr id is kk kn ko lv mk ml mn mr nb-NO nl nn-NO
+#     oc or pa-IN pt-BR pt-PT rm si sq sr ta-LK ta te th tr uk vi zh-CN zh-TW
 # UPDATING:
 %if 0
 rm -vf *.xpi
