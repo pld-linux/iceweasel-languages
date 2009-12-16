@@ -1,9 +1,5 @@
 # TODO:
 #   - do something with *.rdf file, there if file conflict with other lang packages
-#  5      "iceweasel-lang-el.spec"       line 0
-#  6      "iceweasel-lang-es.spec"       line 0
-#  7      "iceweasel-lang-fi.spec"       line 0
-#  8      "iceweasel-lang-fr.spec"       line 0
 #  9      "iceweasel-lang-hu.spec"       line 0
 # 10      "iceweasel-lang-it.spec"       line 0
 # 11      "iceweasel-lang-ja.spec"       line 0
@@ -32,6 +28,14 @@ Source3:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linu
 # Source3-md5:	f3329017e32dfa1eb1f0d3429c722baa
 Source4:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/pl.xpi
 # Source4-md5:	a15635ccfc3fd7ec25a31aeba2842d4b
+Source5:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/el.xpi
+# Source5-md5:	f4d7c2d3dabe337c53bdca1c112b33fc
+Source6:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
+# Source6-md5:	69690daf3c75b8acfe64e837bc210f72
+Source7:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fi.xpi
+# Source7-md5:	684e795e3ea1ff31e9b1d8d2e6ae153f
+Source8:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fr.xpi
+# Source8-md5:	9ebf0b96472e89c21f7806f41d8cc11e
 URL:		http://www.mozilla.org/
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
@@ -113,6 +117,74 @@ German resources for Iceweasel.
 %description -n iceweasel-lang-de -l pl.UTF-8
 Niemieckie pliki językowe dla Iceweasela.
 
+%package -n iceweasel-lang-el
+Summary:	Greek resources for Iceweasel
+Summary(pl.UTF-8):	Greckie pliki językowe dla Iceweasela
+Group:		I18n
+URL:		http://www.mozilla.org/
+Requires:	iceweasel >= %{version}
+Provides:	iceweasel-lang-resources = %{version}
+Obsoletes:	mozilla-firefox-lang-el
+
+%description -n iceweasel-lang-el
+Greek resources for Iceweasel.
+
+%description -n iceweasel-lang-el -l pl.UTF-8
+Greckie pliki językowe dla Iceweasela.
+
+%package -n iceweasel-lang-es
+Summary:	Spanish resources for Iceweasel
+Summary(ca.UTF-8):	Recursos espanyols per Iceweasel
+Summary(es.UTF-8):	Recursos españoles para Iceweasel
+Summary(pl.UTF-8):	Hiszpańskie pliki językowe dla Iceweasela
+Group:		I18n
+URL:		http://www.mozilla.org/
+Requires:	iceweasel >= %{version}
+Provides:	iceweasel-lang-resources = %{version}
+Obsoletes:	mozilla-firefox-lang-es
+
+%description -n iceweasel-lang-es
+Spanish resources for Iceweasel.
+
+%description -n iceweasel-lang-es -l ca.UTF-8
+Recursos espanyols per Iceweasel.
+
+%description -n iceweasel-lang-es -l es.UTF-8
+Recursos españoles para Iceweasel.
+
+%description -n iceweasel-lang-es -l pl.UTF-8
+Hiszpańskie pliki językowe dla Iceweasela.
+
+%package -n iceweasel-lang-fi
+Summary:	Finnish resources for Iceweasel
+Summary(pl.UTF-8):	Fińskie pliki językowe dla Iceweasela
+Group:		I18n
+URL:		http://www.mozilla.org/
+Requires:	iceweasel >= %{version}
+Provides:	iceweasel-lang-resources = %{version}
+Obsoletes:	mozilla-firefox-lang-fi
+
+%description -n iceweasel-lang-fi
+Finnish resources for Iceweasel.
+
+%description -n iceweasel-lang-fi -l pl.UTF-8
+Fińskie pliki językowe dla Iceweasela.
+
+%package -n iceweasel-lang-fr
+Summary:	French resources for Iceweasel
+Summary(pl.UTF-8):	Francuskie pliki językowe dla Iceweasela
+Group:		I18n
+URL:		http://www.mozilla.org/
+Requires:	iceweasel >= %{version}
+Provides:	iceweasel-lang-resources = %{version}
+Obsoletes:	mozilla-firefox-lang-fr
+
+%description -n iceweasel-lang-fr
+French resources for Iceweasel.
+
+%description -n iceweasel-lang-fr -l pl.UTF-8
+Francuskie pliki językowe dla Iceweasela.
+
 %package -n iceweasel-lang-pl
 Summary:	Polish resources for Iceweasel
 Summary(pl.UTF-8):	Polskie pliki językowe dla Iceweasela
@@ -152,14 +224,19 @@ unpack() {
 	cd ../..
 }
 %define __unzip unpack
+# LANGUAGE LOCALE
 cat <<'EOF' > locales.txt
 ca ca-ES
 cs cs
 da da
 de de
+el el
+es-ES es-ES
+fi fi
+fr fr
 pl pl-PL
 EOF
-%setup -qcT %(seq -f '-a %g' 0 4 | xargs)
+%setup -qcT %(seq -f '-a %g' 0 8 | xargs)
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -190,6 +267,26 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{chromedir}/de.jar
 %{chromedir}/de.manifest
+
+%files -n iceweasel-lang-el
+%defattr(644,root,root,755)
+%{chromedir}/el.jar
+%{chromedir}/el.manifest
+
+%files -n iceweasel-lang-es
+%defattr(644,root,root,755)
+%{chromedir}/es-ES.jar
+%{chromedir}/es-ES.manifest
+
+%files -n iceweasel-lang-fi
+%defattr(644,root,root,755)
+%{chromedir}/fi.jar
+%{chromedir}/fi.manifest
+
+%files -n iceweasel-lang-fr
+%defattr(644,root,root,755)
+%{chromedir}/fr.jar
+%{chromedir}/fr.manifest
 
 %files -n iceweasel-lang-pl
 %defattr(644,root,root,755)
