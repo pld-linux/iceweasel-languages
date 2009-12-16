@@ -1,5 +1,11 @@
 # TODO:
 #   - do something with *.rdf file, there if file conflict with other lang packages
+# UPDATING: %if 0
+V=3.5.5
+U=http://releases.mozilla.org/pub/mozilla.org/firefox/releases/$V/linux-i686/
+curl -s $U | sed -ne 's,.*href="\([^"]\+\)/".*,'"$U"'xpi/\1.xpi,p'
+%endif
+
 Summary:	Language packs for Iceweasel
 Name:		iceweasel-languages
 Version:	3.5.5
