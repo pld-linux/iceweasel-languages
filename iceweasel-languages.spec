@@ -385,11 +385,12 @@ unpack() {
 	cd $lang
 	install -d defaults/profile
 	sed -i -e "s@chrome/$lang@$locale@" chrome.manifest
+	[ $lang = $locale ] || mv chrome/$lang chrome/$locale
 	mv chrome.manifest chrome/$locale.manifest
 	mv install.rdf defaults/profile
 
 	# rebrand locale for Iceweasel
-	cd chrome/$lang
+	cd chrome/$locale
 	sed -i -e 's/Mozilla Firefox/Iceweasel/g; s/Firefox/Iceweasel/g;' locale/branding/brand.{dtd,properties}
 	sed -i -e 's/Firefox/Iceweasel/g;' locale/browser/appstrings.properties
 	cd ../../..
