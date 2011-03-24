@@ -16,7 +16,7 @@ curl -s $U | sed -ne 's,.*href="\([^"]\+\)/".*,'"$U"'xpi/\1.xpi,p'
 Summary:	Language packs for Iceweasel
 Name:		iceweasel-languages
 Version:	4.0
-Release:	1
+Release:	0.2
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca.xpi
@@ -377,6 +377,7 @@ Szwedzkie pliki językowe dla Iceweasela.
 %prep
 unpack() {
     local args="$1" file="$2"
+	#TODO: s/Firefox/Iceweasel/g
 	cp $file .
 }
 %define __unzip unpack
