@@ -16,7 +16,7 @@ curl -s $U | sed -ne 's,.*href="\([^"]\+\)/".*,'"$U"'xpi/\1.xpi,p'
 Summary:	Language packs for Iceweasel
 Name:		iceweasel-languages
 Version:	4.0
-Release:	0.2
+Release:	1
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca.xpi
@@ -377,8 +377,18 @@ Szwedzkie pliki językowe dla Iceweasela.
 %prep
 unpack() {
     local args="$1" file="$2"
-	#TODO: s/Firefox/Iceweasel/g
+	local lang=$(basename $file .xpi)
+	install -d $lang
+	
+	# rebrand locale for Iceweasel
+	cd $lang
 	cp $file .
+	unzip -q $lang.xpi chrome/$lang/locale/branding/brand.{dtd,properties} chrome/$lang/locale/browser/appstrings.properties
+	sed -i -e 's/Mozilla Firefox/Iceweasel/g; s/Firefox/Iceweasel/g;' chrome/$lang/locale/branding/brand.{dtd,properties}
+	sed -i -e 's/Firefox/Iceweasel/g;' chrome/$lang/locale/browser/appstrings.properties
+	zip -q0 $lang.xpi chrome/$lang/locale/branding/brand.{dtd,properties} chrome/$lang/locale/browser/appstrings.properties
+	%{__rm} -rf chrome    
+	cd ..
 }
 %define __unzip unpack
 # LANGUAGE LOCALE
@@ -408,7 +418,7 @@ EOF
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{iceweaseldir}/extensions
-for a in *.xpi; do
+for a in */*.xpi; do
 	basename=$(basename $a .xpi)
 	cp $a $RPM_BUILD_ROOT%{iceweaseldir}/extensions/langpack-$basename@firefox.mozilla.org.xpi
 done
