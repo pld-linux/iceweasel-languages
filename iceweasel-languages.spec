@@ -16,7 +16,7 @@ curl -s $U | sed -ne 's,.*href="\([^"]\+\)/".*,'"$U"'xpi/\1.xpi,p'
 Summary:	Language packs for Iceweasel
 Name:		iceweasel-languages
 Version:	4.0
-Release:	0.1
+Release:	1
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca.xpi
@@ -65,7 +65,6 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		iceweaseldir	%{_datadir}/iceweasel
-%define		chromedir		%{iceweaseldir}/chrome
 
 %description
 Language packs for Iceweasel.
@@ -378,22 +377,7 @@ Szwedzkie pliki językowe dla Iceweasela.
 %prep
 unpack() {
     local args="$1" file="$2"
-	local lang=$(basename $file .xpi)
-	%{__unzip} $args -d $lang $file
-
-	locale=$(awk -vl=$lang '$1 == l{print $2}' %{_builddir}/locales.txt)
-	cd $lang
-	install -d defaults/profile
-	sed -i -e "s@chrome/$lang@$locale@" chrome.manifest
-	[ $lang = $locale ] || mv chrome/$lang chrome/$locale
-	mv chrome.manifest chrome/$locale.manifest
-	mv install.rdf defaults/profile
-
-	# rebrand locale for Iceweasel
-	cd chrome/$locale
-	sed -i -e 's/Mozilla Firefox/Iceweasel/g; s/Firefox/Iceweasel/g;' locale/branding/brand.{dtd,properties}
-	sed -i -e 's/Firefox/Iceweasel/g;' locale/browser/appstrings.properties
-	cd ../../..
+	cp $file .
 }
 %define __unzip unpack
 # LANGUAGE LOCALE
@@ -422,9 +406,10 @@ EOF
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{chromedir}
-for a in */chrome; do
-	cp -a $a/* $RPM_BUILD_ROOT%{chromedir}
+install -d $RPM_BUILD_ROOT%{iceweaseldir}/extensions
+for a in *.xpi; do
+	basename=$(basename $a .xpi)
+	cp $a $RPM_BUILD_ROOT%{iceweaseldir}/extensions/langpack-$basename@firefox.mozilla.org.xpi
 done
 
 %clean
@@ -432,95 +417,76 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n iceweasel-lang-ca
 %defattr(644,root,root,755)
-%{chromedir}/ca-ES
-%{chromedir}/ca-ES.manifest
+%{iceweaseldir}/extensions/langpack-ca@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-cs
 %defattr(644,root,root,755)
-%{chromedir}/cs
-%{chromedir}/cs.manifest
+%{iceweaseldir}/extensions/langpack-cs@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-da
 %defattr(644,root,root,755)
-%{chromedir}/da
-%{chromedir}/da.manifest
+%{iceweaseldir}/extensions/langpack-da@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-de
 %defattr(644,root,root,755)
-%{chromedir}/de
-%{chromedir}/de.manifest
+%{iceweaseldir}/extensions/langpack-de@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-el
 %defattr(644,root,root,755)
-%{chromedir}/el
-%{chromedir}/el.manifest
+%{iceweaseldir}/extensions/langpack-el@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-es
 %defattr(644,root,root,755)
-%{chromedir}/es-ES
-%{chromedir}/es-ES.manifest
+%{iceweaseldir}/extensions/langpack-es-ES@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-fi
 %defattr(644,root,root,755)
-%{chromedir}/fi
-%{chromedir}/fi.manifest
+%{iceweaseldir}/extensions/langpack-fi@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-fr
 %defattr(644,root,root,755)
-%{chromedir}/fr
-%{chromedir}/fr.manifest
+%{iceweaseldir}/extensions/langpack-fr@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-hu
 %defattr(644,root,root,755)
-%{chromedir}/hu
-%{chromedir}/hu.manifest
+%{iceweaseldir}/extensions/langpack-hu@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-it
 %defattr(644,root,root,755)
-%{chromedir}/it
-%{chromedir}/it.manifest
+%{iceweaseldir}/extensions/langpack-it@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ja
 %defattr(644,root,root,755)
-%{chromedir}/ja
-%{chromedir}/ja.manifest
+%{iceweaseldir}/extensions/langpack-ja@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ku
 %defattr(644,root,root,755)
-%{chromedir}/ku
-%{chromedir}/ku.manifest
+%{iceweaseldir}/extensions/langpack-ku@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-lt
 %defattr(644,root,root,755)
-%{chromedir}/lt
-%{chromedir}/lt.manifest
+%{iceweaseldir}/extensions/langpack-lt@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-pl
 %defattr(644,root,root,755)
-%{chromedir}/pl-PL
-%{chromedir}/pl-PL.manifest
+%{iceweaseldir}/extensions/langpack-pl@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ro
 %defattr(644,root,root,755)
-%{chromedir}/ro
-%{chromedir}/ro.manifest
+%{iceweaseldir}/extensions/langpack-ro@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ru
 %defattr(644,root,root,755)
-%{chromedir}/ru
-%{chromedir}/ru.manifest
+%{iceweaseldir}/extensions/langpack-ru@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-sk
 %defattr(644,root,root,755)
-%{chromedir}/sk
-%{chromedir}/sk.manifest
+%{iceweaseldir}/extensions/langpack-sk@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-sl
 %defattr(644,root,root,755)
-%{chromedir}/sl
-%{chromedir}/sl.manifest
+%{iceweaseldir}/extensions/langpack-sl@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-sv
 %defattr(644,root,root,755)
-%{chromedir}/sv-SE
-%{chromedir}/sv-SE.manifest
+%{iceweaseldir}/extensions/langpack-sv-SE@firefox.mozilla.org.xpi
