@@ -382,7 +382,7 @@ unpack() {
 	
 	# rebrand locale for Iceweasel
 	cd $lang
-	cp $file .
+	cp -p $file .
 	unzip -q $lang.xpi chrome/$lang/locale/branding/brand.{dtd,properties} chrome/$lang/locale/browser/appstrings.properties
 	sed -i -e 's/Mozilla Firefox/Iceweasel/g; s/Firefox/Iceweasel/g;' chrome/$lang/locale/branding/brand.{dtd,properties}
 	sed -i -e 's/Firefox/Iceweasel/g;' chrome/$lang/locale/browser/appstrings.properties
@@ -391,28 +391,6 @@ unpack() {
 	cd ..
 }
 %define __unzip unpack
-# LANGUAGE LOCALE
-cat <<'EOF' > locales.txt
-ca ca-ES
-cs cs
-da da
-de de
-el el
-es-ES es-ES
-fi fi
-fr fr
-hu hu
-it it
-ja ja
-ku ku
-lt lt
-pl pl-PL
-ro ro
-ru ru
-sk sk
-sl sl
-sv-SE sv-SE
-EOF
 %setup -qcT %(seq -f '-a %g' 0 18 | xargs)
 
 %install
@@ -420,7 +398,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{iceweaseldir}/extensions
 for a in */*.xpi; do
 	basename=$(basename $a .xpi)
-	cp $a $RPM_BUILD_ROOT%{iceweaseldir}/extensions/langpack-$basename@firefox.mozilla.org.xpi
+	cp -p $a $RPM_BUILD_ROOT%{iceweaseldir}/extensions/langpack-$basename@firefox.mozilla.org.xpi
 done
 
 %clean
