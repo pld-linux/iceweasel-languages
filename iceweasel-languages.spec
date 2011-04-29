@@ -15,48 +15,48 @@ curl -s $U | sed -ne 's,.*href="\([^"]\+\)/".*,'"$U"'xpi/\1.xpi,p'
 
 Summary:	Language packs for Iceweasel
 Name:		iceweasel-languages
-Version:	4.0
+Version:	4.0.1
 Release:	1
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca.xpi
-# Source0-md5:	a18dc4b7f585a4a5d9bb8efa9096333a
+# Source0-md5:	bde05d2e0b5a84aadca4cb3875e3ff06
 Source1:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/cs.xpi
-# Source1-md5:	2036d7b9d3360729a25615d63b677b79
+# Source1-md5:	63897b1f437011726ce0edcc92df1924
 Source2:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/da.xpi
-# Source2-md5:	843b31fc91eedb33b010ede3bd01f74f
+# Source2-md5:	6e2b6aaaa8e2cf5629b0a52123ea515a
 Source3:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/de.xpi
-# Source3-md5:	7218d1145adbab37a0bf6b8cfc1cff76
+# Source3-md5:	44783bd9cba4e453dc1008a68bf03c05
 Source4:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/el.xpi
-# Source4-md5:	d2a75d2438c538cac4cb874f73f5407f
+# Source4-md5:	53502078c247a5c7c20626ac75b0715e
 Source5:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
-# Source5-md5:	3e86106fa213ae3828053df6e969dd52
+# Source5-md5:	53d585cb392e40e62ff27d51a4042fbb
 Source6:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fi.xpi
-# Source6-md5:	a4b5c1b7296c2bdac0da505e1369b430
+# Source6-md5:	5329916752720ae3e537503c9f03c9ba
 Source7:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fr.xpi
-# Source7-md5:	e965f65282fd0f8e1181388288a74ef9
+# Source7-md5:	7b7ddcbf0351758241da3b02bb8cbe43
 Source8:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/hu.xpi
-# Source8-md5:	559e34b98cd47bbe7cfda13c0b6fb8f9
+# Source8-md5:	461aa6dc8200be7357da9b79553dd257
 Source9:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/it.xpi
-# Source9-md5:	e8e41e24d50c2cb5d097ded2075f4109
+# Source9-md5:	a068e87ad0629be67327a6a6814625ae
 Source10:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ja.xpi
-# Source10-md5:	714902b5501e0834260465afb8d9ad7c
+# Source10-md5:	f46b71e7efb5184d563ba72a65d032a2
 Source11:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ku.xpi
-# Source11-md5:	a6932da68853aa9efaf55ebbaea21cea
+# Source11-md5:	bdcf8e5862171b0f099534f5fb87b6ae
 Source12:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/lt.xpi
-# Source12-md5:	f604af621caee5c865d33d4316bdf4e4
+# Source12-md5:	19b25ee5dd61c730dd3c13e99799a042
 Source13:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/pl.xpi
-# Source13-md5:	ae1c3fb99330c255feba09fc7d6a6017
+# Source13-md5:	5a15c763880ed009c49291152ad280c6
 Source14:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ro.xpi
-# Source14-md5:	c550ba8797413af84a00cdc10f98ce23
+# Source14-md5:	deb32e78bdabec668042855f79e3c22d
 Source15:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ru.xpi
-# Source15-md5:	80c4eb1e9bff60e56dffde21f1ea50f7
+# Source15-md5:	f3e6d2fa209d2cacfad7567470d4c00a
 Source16:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sk.xpi
-# Source16-md5:	b24ca4f8ce955dc3c8f8581627a9961e
+# Source16-md5:	1ee0da8e1e0dc449118f991576464446
 Source17:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sl.xpi
-# Source17-md5:	9c2bd7e9b8ef192ae83aa477d73fc8bb
+# Source17-md5:	72f596c98d232a45b2a26c370f64286c
 Source18:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sv-SE.xpi
-# Source18-md5:	0ddf72377a2308a2349cea0f1ef54353
+# Source18-md5:	f71ebb22f262ae4e058f91d850e4cfb3
 URL:		http://www.mozilla.org/
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
