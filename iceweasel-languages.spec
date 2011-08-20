@@ -14,6 +14,7 @@ curl -s $U | sed -ne 's,.*href="\([^"]\+\)/".*,'"$U"'xpi/\1.xpi,p'
 %endif
 
 Summary:	Language packs for Iceweasel
+Summary(pl.UTF-8):	Pakiety językowe dla Iceweasela
 Name:		iceweasel-languages
 Version:	5.0.1
 Release:	1
@@ -68,6 +69,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Language packs for Iceweasel.
+
+%description -l pl.UTF-8
+Pakiety językowe dla Iceweasela.
 
 %package -n iceweasel-lang-ca
 Summary:	Catalan resources for Iceweasel
