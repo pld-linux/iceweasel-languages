@@ -16,48 +16,48 @@ curl -s $U | sed -ne 's,.*href="\([^"]\+\)/".*,'"$U"'xpi/\1.xpi,p'
 Summary:	Language packs for Iceweasel
 Summary(pl.UTF-8):	Pakiety językowe dla Iceweasela
 Name:		iceweasel-languages
-Version:	6.0
+Version:	6.0.2
 Release:	1
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca.xpi
-# Source0-md5:	a14cfdc11a22ecf3088266ae118622af
+# Source0-md5:	3b868e0d726f9e3242ef26a09952b8d3
 Source1:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/cs.xpi
-# Source1-md5:	87b5c27577a03b45d63fcaeb400505e1
+# Source1-md5:	4c1ab556025d7dcd81b48c2b784d7e87
 Source2:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/da.xpi
-# Source2-md5:	82596a3d3f13ed512b1523c68c319a24
+# Source2-md5:	bd3be8dce44affd1cd6d79fa82ce5320
 Source3:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/de.xpi
-# Source3-md5:	a54df0d22c3abc929dc5e439397cd8b0
+# Source3-md5:	21790f7d1140608fbf7209e562c33ba7
 Source4:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/el.xpi
-# Source4-md5:	938052ce07eb1fe578441f2eb2c63311
+# Source4-md5:	df2b2d6ba7c651dde41d6ac961990b45
 Source5:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
-# Source5-md5:	b76887cfdbb4799e7223f114804886ea
+# Source5-md5:	b9c0680ab805b556e88fbdc57f8e0c75
 Source6:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fi.xpi
-# Source6-md5:	044ac72fa98b1477e09c2c559aadfd2b
+# Source6-md5:	3b10c1566dd6c63c57395f7af0bcab3e
 Source7:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fr.xpi
-# Source7-md5:	29c225e02a7ac3539ccd485e867dd2c2
+# Source7-md5:	5221a1d2bcee7ac85b4d31a5d8e2949f
 Source8:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/hu.xpi
-# Source8-md5:	759d081f8893f2f7762f7f510081a93d
+# Source8-md5:	119ee73763a1dbde06d41f898eb4e7d5
 Source9:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/it.xpi
-# Source9-md5:	01725f29ca4f16ff8afcb66f0e25087e
+# Source9-md5:	c4f1f4224e2d83161dd568796cfa6ecf
 Source10:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ja.xpi
-# Source10-md5:	33714941a1217179f6583098fc1f4ee0
+# Source10-md5:	b8a5d4616e5cb8259617540baac7df30
 Source11:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ku.xpi
-# Source11-md5:	04725b241782af2c6431ad2eeca697db
+# Source11-md5:	8600db90ba391f5ff99b3b9037c6f88f
 Source12:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/lt.xpi
-# Source12-md5:	b682e3492710704137cf1b53383e51bc
+# Source12-md5:	883232045aa2845a2449ed5bfdd31218
 Source13:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/pl.xpi
-# Source13-md5:	88e51142f5059a0b191680c90d29b53a
+# Source13-md5:	4f1aa58474413b18897da5d079a18970
 Source14:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ro.xpi
-# Source14-md5:	9b6e21843b73b1425051b4811978d1ad
+# Source14-md5:	0fb1f7a1127d0f739d329f79880d1b3f
 Source15:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ru.xpi
-# Source15-md5:	5c8d47365cb32381bf4e60c160299952
+# Source15-md5:	d887144088149b3a27ce354d8464546f
 Source16:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sk.xpi
-# Source16-md5:	75c4e067234c7f98f6ef6705dc7f7c32
+# Source16-md5:	171170453a34a0fa34209361f20380bb
 Source17:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sl.xpi
-# Source17-md5:	afaca21955879f438892f32fce7e78b2
+# Source17-md5:	df0df59f20e706851f1ad01d9e757299
 Source18:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sv-SE.xpi
-# Source18-md5:	f7548f2ce58acb63fbde09a46c4fe767
+# Source18-md5:	1854dc2674b42a237f94af2232cd4cee
 URL:		http://www.mozilla.org/
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
