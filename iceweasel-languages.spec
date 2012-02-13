@@ -1419,7 +1419,7 @@ unpack() {
 	sed -i -e 's/Mozilla Firefox/Iceweasel/g; s/Firefox/Iceweasel/g;' chrome/$lang/locale/branding/brand.{dtd,properties}
 	sed -i -e 's/Firefox/Iceweasel/g;' chrome/$lang/locale/browser/appstrings.properties
 	zip -q0 $lang.xpi chrome/$lang/locale/branding/brand.{dtd,properties} chrome/$lang/locale/browser/appstrings.properties
-	if ! grep -q "<em:minVersion>%{version}</em:minVersion>" install.rdf; then
+	if ! grep -q "<em:minVersion>%{version}.1</em:minVersion>" install.rdf; then
 		echo "$lang.xpi most likely doesn't work with iceweasel %{version}!" >&2
 		exit 1
 	fi
