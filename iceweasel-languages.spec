@@ -1484,13 +1484,13 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{iceweaseldir}/extensions/langpack-ar@firefox.mozilla.org.xpi
 
-%files -n iceweasel-lang-ast
-%defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ast@firefox.mozilla.org.xpi
-
 %files -n iceweasel-lang-as
 %defattr(644,root,root,755)
 %{iceweaseldir}/extensions/langpack-as@firefox.mozilla.org.xpi
+
+%files -n iceweasel-lang-ast
+%defattr(644,root,root,755)
+%{iceweaseldir}/extensions/langpack-ast@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-be
 %defattr(644,root,root,755)
