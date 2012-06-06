@@ -12,182 +12,182 @@ curl -s $U | sed -ne 's,.*href="\([^"]\+\)/".*,'"$U"'xpi/\1.xpi,p'
 Summary:	Language packs for Iceweasel
 Summary(pl.UTF-8):	Pakiety językowe dla Iceweasela
 Name:		iceweasel-languages
-Version:	12.0
+Version:	13.0
 Release:	1
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/af.xpi
-# Source0-md5:	15b54ed9ed819176ec329def4a991600
+# Source0-md5:	cbb3d0478e09fa9fdd05d461688a9c09
 Source1:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ak.xpi
-# Source1-md5:	4fcb48d9201977c45d10e62bd8a7a770
+# Source1-md5:	deb260a97c9b5668eff3187968e4e3b5
 Source2:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ar.xpi
-# Source2-md5:	519d07df89b40a5a626320b383ea303a
+# Source2-md5:	2044f03ff9760a5bbced9d555cf93707
 Source3:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/as.xpi
-# Source3-md5:	3bab61628f44cb756645e27c59a15797
+# Source3-md5:	b165cc12b0508c6aa9bcaae49c284d19
 Source4:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ast.xpi
-# Source4-md5:	c9cc571866124769ed7fe8a5e83f2369
+# Source4-md5:	9c9afeb326c59504675ada5693b96f1d
 Source5:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/be.xpi
-# Source5-md5:	7ec64ead291aff070df6d3d29827245e
+# Source5-md5:	8f5d1cf5a95891b18f92e0c16af82a67
 Source6:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/bg.xpi
-# Source6-md5:	7940b83b9e7a9c008566d33203fa90cc
+# Source6-md5:	7caa7662e2044d5eaf98113b87cba0bf
 Source7:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/bn-BD.xpi
-# Source7-md5:	91208ff68e751138d17739a783539c66
+# Source7-md5:	132ad89d67d709e239c113269c850163
 Source8:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/bn-IN.xpi
-# Source8-md5:	219044f4e4442df683cbcfaf7dd81a17
+# Source8-md5:	b711e60c7566c430b19ac57cddbf0e75
 Source9:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/br.xpi
-# Source9-md5:	9b15c439e4199cd151a2fd219e6f0ecb
+# Source9-md5:	8a5be5b487bff7ce461d23b1fd847330
 Source10:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/bs.xpi
-# Source10-md5:	5e956b5c2153d0f56dd4f16284697b3c
+# Source10-md5:	83df0b4fd2c2af3225c1c83341cbbc20
 Source11:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ca.xpi
-# Source11-md5:	0c543eb9b98dd4d2da03cac0bfee75fb
+# Source11-md5:	1526de40c8df1bd085f1f5a1e8de2c13
 Source12:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/cs.xpi
-# Source12-md5:	41bbf796859a86019c007e560a0432be
+# Source12-md5:	ae4397d8a2706d08cff5bb4d7c4ef908
 Source13:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/csb.xpi
-# Source13-md5:	7c3098c5ce8145ed26b18338d022b6f1
+# Source13-md5:	cdf597430ff472e562f08f4cf781c17e
 Source14:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/cy.xpi
-# Source14-md5:	fb64849c1cacf2a25c4b72db391e0525
+# Source14-md5:	ba8d1f9fdfd4fbda6210dede964b9c73
 Source15:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/da.xpi
-# Source15-md5:	463647f17924526f70048c45cbed1e6b
+# Source15-md5:	23356abaf6c0f4c5d50bda0cf1df84b4
 Source16:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/de.xpi
-# Source16-md5:	3837059d8fd355e83a9e29fc5c34b4b1
+# Source16-md5:	79286174632ac70c78a6404b2fd84f36
 Source17:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/el.xpi
-# Source17-md5:	d59386f2ffaed913dc6693384e44ca6d
+# Source17-md5:	4cfb3fbbe82ac49cd4dd3bac90e9a09c
 Source18:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/en-GB.xpi
-# Source18-md5:	232f288c382117a2889c7efca67a1c8f
+# Source18-md5:	2456a3fd586cac57a45b969bed60e633
 Source19:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/en-US.xpi
-# Source19-md5:	7cd231baa705e87058cd2faefd5e6867
+# Source19-md5:	5477d55079813671f0a72107edd7ad82
 Source20:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/en-ZA.xpi
-# Source20-md5:	898101fa405656eca386e48e9f5d9abf
+# Source20-md5:	ce8eed792c80fcf803e10ca6d7dcec5d
 Source21:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/eo.xpi
-# Source21-md5:	a5848cc8675cf6a65deb24521d6bc86f
+# Source21-md5:	480ef390240035aa465d39913acb9dce
 Source22:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-AR.xpi
-# Source22-md5:	e4ce285bcc95da273479642172008f1a
+# Source22-md5:	675fe91c6ef7df15ab66159c13370592
 Source23:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-CL.xpi
-# Source23-md5:	00da420f7ab6b6324ea7355a24f23a8d
+# Source23-md5:	d5e4e53f61516a0f9590022697fd2b92
 Source24:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-ES.xpi
-# Source24-md5:	2534ab72aa90cacd945d607e92ef4fb4
+# Source24-md5:	51108dd6af4b026557d1c394d47eb92e
 Source25:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/es-MX.xpi
-# Source25-md5:	8305af1353376e95a736df70a7786251
+# Source25-md5:	e1721b3314fbbc750b21c1446b32f5ac
 Source26:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/et.xpi
-# Source26-md5:	12282bb7d91b8680d33d7ebaf1c19c7c
+# Source26-md5:	8ccde148958aad0843e7ea931fe36e55
 Source27:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/eu.xpi
-# Source27-md5:	6d6ff6deed99e5504a380551de8c715a
+# Source27-md5:	e404c9c9f25e1e3419366baccfd7e59a
 Source28:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fa.xpi
-# Source28-md5:	1b6ac10cea4ef52e3e483f13b45df755
+# Source28-md5:	b87e1c69cef8fc2557c5d2b716ffe305
 Source29:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fi.xpi
-# Source29-md5:	07a246666803dd520a758f51febc178e
+# Source29-md5:	2fe6888bcd5631ef28a088ef6fa82a32
 Source30:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fr.xpi
-# Source30-md5:	e2e15f3876d085594905b1ea1841698c
+# Source30-md5:	f37102f686b357413405ad268468fb3a
 Source31:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/fy-NL.xpi
-# Source31-md5:	0dd33a22cdbd7cad81914a5f9ff9dd13
+# Source31-md5:	67c19049c597803c948812748ef37651
 Source32:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ga-IE.xpi
-# Source32-md5:	1d199ed9477a0f17cb57f0d851dd06a3
+# Source32-md5:	57d4dddf0d3ff96191df9521aecac578
 Source33:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/gd.xpi
-# Source33-md5:	7745ed5e163c78bf93d0ae44dfd895ee
+# Source33-md5:	d4c5644f1a349eaf94f80c2d1bb6f774
 Source34:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/gl.xpi
-# Source34-md5:	0338f5901c61a49a7181a7e448bfe1ab
+# Source34-md5:	d50b3765b90d284b6a1c86f1959542f0
 Source35:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/gu-IN.xpi
-# Source35-md5:	069e043edda06f49afbfa968c0fd7766
+# Source35-md5:	0edb6efa0696a9d10ae8e6383f349523
 Source36:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/he.xpi
-# Source36-md5:	c632cb39c4a1598678b5c50a2badc65a
+# Source36-md5:	28051482f9a636f5438c4b5092b7be49
 Source37:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/hi-IN.xpi
-# Source37-md5:	2d6624af8956e13eb31fc5755f0bf563
+# Source37-md5:	9936d2e44e2e22526ac65b7835b2a3ce
 Source38:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/hr.xpi
-# Source38-md5:	02280813e8df882150d22f5d62aea2eb
+# Source38-md5:	368e06cdce899d3ccb889b3749f493bd
 Source39:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/hu.xpi
-# Source39-md5:	0aee95f80f34666f1d2f9fd538858f19
+# Source39-md5:	ad969c322d772464cd683d56e90871c7
 Source40:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/hy-AM.xpi
-# Source40-md5:	20fc4a3519806c93fde610dcd8441903
+# Source40-md5:	adc0d5cd08eed72f9011cac024151cc2
 Source41:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/id.xpi
-# Source41-md5:	1a8e9d803a3fffb38e8485bb5c8a9fc8
+# Source41-md5:	4c22d1faa042136ed82c2519e1744e73
 Source42:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/is.xpi
-# Source42-md5:	40bf5c8940dd25b8bafb9dc1d29560d0
+# Source42-md5:	687358774e16e2e6ab3ac58a2d65a6de
 Source43:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/it.xpi
-# Source43-md5:	8f34d15d2a5ddf726188e1ae36157c7a
+# Source43-md5:	2f48fc3fe51758695ae974e05fcd5487
 Source44:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ja.xpi
-# Source44-md5:	f78ee7a3b95a221534d15f4c24dfd57d
+# Source44-md5:	ed311eb8720105530c20c1cd7237c265
 Source45:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/kk.xpi
-# Source45-md5:	7654914b5e51f50d4cd573ebb464e224
+# Source45-md5:	8e0af760e8209168046cb84b1a28f73d
 Source46:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/kn.xpi
-# Source46-md5:	1d1377d409b0bcb288d89339da6ae75f
+# Source46-md5:	50dd46cacc34517b6eb2344801e82817
 Source47:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ko.xpi
-# Source47-md5:	b449528ba9feda8deb952ec49ef3d0d5
+# Source47-md5:	bece12aeb13030312c2f274fd0e75100
 Source48:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ku.xpi
-# Source48-md5:	9ac45f44787c18b5eb551d4aa36e39a9
+# Source48-md5:	2b9318a2ab8ec719b355b87a1b12bbc3
 Source49:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/lg.xpi
-# Source49-md5:	1f578e3369a3803ef4414412591926e7
+# Source49-md5:	7094728dd29fb98d066de44c87fb46c4
 Source50:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/lij.xpi
-# Source50-md5:	fe1c5e236523fa256a42471962f1f632
+# Source50-md5:	732edb39d5695099d6c767e43ddba71f
 Source51:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/lt.xpi
-# Source51-md5:	5e933682ddc8329397d77a4442c41e1f
+# Source51-md5:	d43f81b395b1d4adeae9fa764d2902f2
 Source52:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/lv.xpi
-# Source52-md5:	ecd9ab7c08e60d42a1f14fcfe3000d33
+# Source52-md5:	c30d9c79e47e4080399f87642cd8dd11
 Source53:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/mai.xpi
-# Source53-md5:	ccfae60a48801241f8fea7d37e2cdcf1
+# Source53-md5:	cb28c61777240f35f9f3e48ac35fed2a
 Source54:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/mk.xpi
-# Source54-md5:	096e3d10d672e78852f85e9eb45c7631
+# Source54-md5:	2d4cdb9b11e0a4483eb38533e8d3a800
 Source55:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ml.xpi
-# Source55-md5:	cb74e305a41452c7cac73579bba99938
+# Source55-md5:	8e3e906b654fc496b8d5c72c32606329
 Source56:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/mr.xpi
-# Source56-md5:	62a2f2ad6ef21e90fab8103a24fdfdb3
+# Source56-md5:	d1eb903b17cfcfed1bc8939facfcf770
 Source57:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/nb-NO.xpi
-# Source57-md5:	d4bb4658b4bb41c516bab33dd55266b6
+# Source57-md5:	3c0e48ffaa99960c5a1c5733afb36b70
 Source58:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/nl.xpi
-# Source58-md5:	ffaf298487cd4a941ef5c865b6e72c04
+# Source58-md5:	b6debf8ac1a743b1c4f590af9ad1dc23
 Source59:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/nn-NO.xpi
-# Source59-md5:	f6ced90df59deaaf5c82adbf66660cef
+# Source59-md5:	87da62554371ff2f7ca60425ded7be7f
 Source60:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/nso.xpi
-# Source60-md5:	4af698e786d42c4300172ab810f57938
+# Source60-md5:	69f7babeab96344230c3e408f0f09524
 Source61:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/or.xpi
-# Source61-md5:	2d4a592ac7eabbc99c360edae33dee1c
+# Source61-md5:	8f38b5648d2bb5774af540a10894a711
 Source62:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/pa-IN.xpi
-# Source62-md5:	cb4720fe6638ac5e624cbaef0e757a52
+# Source62-md5:	79f39ba9981c2a0be13b272da691588b
 Source63:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/pl.xpi
-# Source63-md5:	4a9d0533bf8942083af3a058f4ef9be1
+# Source63-md5:	4ecece6d582e4f6a7cf0914ce6205e74
 Source64:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/pt-BR.xpi
-# Source64-md5:	0b3671cdf818750b8e19e4a19c47a77e
+# Source64-md5:	8545228b1cf25f865a36bc9fa9f263e4
 Source65:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/pt-PT.xpi
-# Source65-md5:	eb7e21797fc89cb91ff857e353469e57
+# Source65-md5:	14d0dc227b5bd4768f2f7bbc364de1f6
 Source66:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/rm.xpi
-# Source66-md5:	0678954d1005c1b75f64c41b3a829639
+# Source66-md5:	56c311e650229b5813ab2f46e3d3a679
 Source67:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ro.xpi
-# Source67-md5:	1b25333a4b40a8a06d66ef37e1443cf4
+# Source67-md5:	c53bb35e22a275dcb856d5b5cd354440
 Source68:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ru.xpi
-# Source68-md5:	550b6074d9dad216fb41146ee19bd439
+# Source68-md5:	af1aeddfc21a749a4033f917690746cd
 Source69:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/si.xpi
-# Source69-md5:	05fa34a845453a1e93d3bb2b30cf8c0a
+# Source69-md5:	f5a700d9566c8191a9929f3877a9a2e7
 Source70:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sk.xpi
-# Source70-md5:	ceca9240352512ab7675c8073e63bc5c
+# Source70-md5:	19ac57695a0191cf8d577628a7016e4c
 Source71:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sl.xpi
-# Source71-md5:	3b05c964a1d0e01e80e51246688de108
+# Source71-md5:	2344c7c6364abd57adae8defd4bfaff2
 Source72:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/son.xpi
-# Source72-md5:	445feda12823dc4450b2cbb26a18ad16
+# Source72-md5:	7e01508f09500a52474439087d7c6d56
 Source73:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sq.xpi
-# Source73-md5:	4ab030c5060c0fec4bf17e09610d4b71
+# Source73-md5:	c0a1c9c58d7e46f33c32f188cf40e1e3
 Source74:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sr.xpi
-# Source74-md5:	7aefa911725b9c416f3cea79ab852054
+# Source74-md5:	93f81ac6b8b51001a13a012e04f43213
 Source75:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/sv-SE.xpi
-# Source75-md5:	f9431af052aa77dea0b0a98a821e7eff
+# Source75-md5:	880c5b98eae1ca6219e4a54182b7c9ee
 Source76:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ta.xpi
-# Source76-md5:	fb166338ccea1b1a32afc09c7167750e
+# Source76-md5:	a7726af2a11d59162fe114be98f846ff
 Source77:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ta-LK.xpi
-# Source77-md5:	f046f2ffb9b06b41cc1595960c46901c
+# Source77-md5:	e072919b2eaa290364f08ac6f569e448
 Source78:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/te.xpi
-# Source78-md5:	d02362326a6413c451415a431a5b4679
+# Source78-md5:	fcfcdd9a32c78cc4448c36f97c509f74
 Source79:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/th.xpi
-# Source79-md5:	5ceacd2ab3b16feffce6105121964b38
+# Source79-md5:	569374e8a1fb79d32681cfef1c948120
 Source80:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/tr.xpi
-# Source80-md5:	d1524e0bfeab28bd5f3c09d9579916e5
+# Source80-md5:	debeba7b95647f5fd4d0b918c9797598
 Source81:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/uk.xpi
-# Source81-md5:	4f1d8947acbea0d60feffef130acf566
+# Source81-md5:	909c72ef6eaeb3ce8c883f34c8084750
 Source82:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/vi.xpi
-# Source82-md5:	52095d7a032191154bb2f00c1d4afe9c
+# Source82-md5:	67f6e46bf2295a4b84d32d2e4e400d8c
 Source83:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/zh-CN.xpi
-# Source83-md5:	941bf9fd891fdad3cd7495a09a0423f8
+# Source83-md5:	a4c45cb4cb3eb1dee6dedc116369db7e
 Source84:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/zh-TW.xpi
-# Source84-md5:	4fa77f49259b116f5ac0bd8a16d8d7ec
+# Source84-md5:	5e357ef295b8182688df748f7725db95
 Source85:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/zu.xpi
-# Source85-md5:	4f93f3d298ccfb5d3723b52fd200feba
+# Source85-md5:	a250f50ebbe187a1806f23c00ecad8ba
 URL:		http://www.mozilla.org/
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
