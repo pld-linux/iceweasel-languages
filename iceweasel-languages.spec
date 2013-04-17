@@ -203,6 +203,20 @@ Language packs for Iceweasel.
 %description -l pl.UTF-8
 Pakiety językowe dla Iceweasela.
 
+%package -n iceweasel-lang-ach
+Summary:	Acoli resources for Iceweasel
+Summary(pl.UTF-8):	Pliki językowe aczoli dla Iceweasela
+Group:		I18n
+Requires:	iceweasel >= %{version}
+Provides:	iceweasel-lang-resources = %{version}
+Obsoletes:	mozilla-firefox-lang-ach
+
+%description -n iceweasel-lang-ach
+Acoli resources for Iceweasel.
+
+%description -n iceweasel-lang-ach -l pl.UTF-8
+Pliki językowe aczoli dla Iceweasela.
+
 %package -n iceweasel-lang-af
 Summary:	Afrikaans resources for Iceweasel
 Summary(pl.UTF-8):	Afrykanerskie pliki językowe dla Iceweasela
@@ -651,6 +665,20 @@ Persian resources for Iceweasel.
 %description -n iceweasel-lang-fa -l pl.UTF-8
 Perskie pliki językowe dla Iceweasela.
 
+%package -n iceweasel-lang-ff
+Summary:	Fulah resources for Iceweasel
+Summary(pl.UTF-8):	Pliki językowe fulani dla Iceweasela
+Group:		I18n
+Requires:	iceweasel >= %{version}
+Provides:	iceweasel-lang-resources = %{version}
+Obsoletes:	mozilla-firefox-lang-ff
+
+%description -n iceweasel-lang-ff
+Fulah resources for Iceweasel.
+
+%description -n iceweasel-lang-ff -l pl.UTF-8
+Pliki językowe fulani dla Iceweasela.
+
 %package -n iceweasel-lang-fi
 Summary:	Finnish resources for Iceweasel
 Summary(pl.UTF-8):	Fińskie pliki językowe dla Iceweasela
@@ -892,6 +920,20 @@ Kazakh resources for Iceweasel.
 
 %description -n iceweasel-lang-kk -l pl.UTF-8
 Kazachskie pliki językowe dla Iceweasela.
+
+%package -n iceweasel-lang-km
+Summary:	Khmer resources for Iceweasel
+Summary(pl.UTF-8):	Khmerskie pliki językowe dla Iceweasela
+Group:		I18n
+Requires:	iceweasel >= %{version}
+Provides:	iceweasel-lang-resources = %{version}
+Obsoletes:	mozilla-firefox-lang-km
+
+%description -n iceweasel-lang-km
+Khmer resources for Iceweasel.
+
+%description -n iceweasel-lang-km -l pl.UTF-8
+Khmerskie pliki językowe dla Iceweasela.
 
 %package -n iceweasel-lang-kn
 Summary:	Kannada resources for Iceweasel
@@ -1475,7 +1517,7 @@ unpack() {
 	cd ..
 }
 %define __unzip unpack
-%setup -qcT %(seq -f '-a %g' 0 85 | xargs)
+%setup -qcT %(seq -f '-a %g' 0 88 | xargs)
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -1487,6 +1529,10 @@ done
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files -n iceweasel-lang-ach
+%defattr(644,root,root,755)
+%{iceweaseldir}/extensions/langpack-ach@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-af
 %defattr(644,root,root,755)
@@ -1604,6 +1650,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{iceweaseldir}/extensions/langpack-fa@firefox.mozilla.org.xpi
 
+%files -n iceweasel-lang-ff
+%defattr(644,root,root,755)
+%{iceweaseldir}/extensions/langpack-ff@firefox.mozilla.org.xpi
+
 %files -n iceweasel-lang-fi
 %defattr(644,root,root,755)
 %{iceweaseldir}/extensions/langpack-fi@firefox.mozilla.org.xpi
@@ -1671,6 +1721,10 @@ rm -rf $RPM_BUILD_ROOT
 %files -n iceweasel-lang-kk
 %defattr(644,root,root,755)
 %{iceweaseldir}/extensions/langpack-kk@firefox.mozilla.org.xpi
+
+%files -n iceweasel-lang-km
+%defattr(644,root,root,755)
+%{iceweaseldir}/extensions/langpack-km@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-kn
 %defattr(644,root,root,755)
