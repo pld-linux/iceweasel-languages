@@ -1517,7 +1517,7 @@ unpack() {
 	cd ..
 }
 %define __unzip unpack
-%setup -qcT %(seq -f '-a %g' 0 88 | xargs)
+%setup -qcT %(seq -f '-a %g' 0 85 | xargs)
 
 %install
 rm -rf $RPM_BUILD_ROOT
