@@ -1511,10 +1511,10 @@ unpack() {
 	# rebrand locale for Iceweasel
 	cd $lang
 	cp -p $file .
-	unzip -q $lang.xpi install.rdf chrome/$lang/locale/branding/brand.{dtd,properties} chrome/$lang/locale/browser/appstrings.properties
-	sed -i -e 's/Mozilla Firefox/Iceweasel/g; s/Firefox/Iceweasel/g;' chrome/$lang/locale/branding/brand.{dtd,properties}
-	sed -i -e 's/Firefox/Iceweasel/g;' chrome/$lang/locale/browser/appstrings.properties
-	zip -q0 $lang.xpi chrome/$lang/locale/branding/brand.{dtd,properties} chrome/$lang/locale/browser/appstrings.properties
+	unzip -q $lang.xpi install.rdf browser/chrome/$lang/locale/branding/brand.{dtd,properties} browser/chrome/$lang/locale/browser/appstrings.properties
+	sed -i -e 's/Mozilla Firefox/Iceweasel/g; s/Firefox/Iceweasel/g;' browser/chrome/$lang/locale/branding/brand.{dtd,properties}
+	sed -i -e 's/Firefox/Iceweasel/g;' browser/chrome/$lang/locale/browser/appstrings.properties
+	zip -q0 $lang.xpi browser/chrome/$lang/locale/branding/brand.{dtd,properties} browser/chrome/$lang/locale/browser/appstrings.properties
 	if ! grep -q "<em:minVersion>%{version}</em:minVersion>" install.rdf; then
 		echo "$lang.xpi most likely doesn't work with iceweasel %{version}!" >&2
 		exit 1
