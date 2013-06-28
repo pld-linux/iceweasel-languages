@@ -13,7 +13,7 @@ Summary:	Language packs for Iceweasel
 Summary(pl.UTF-8):	Pakiety językowe dla Iceweasela
 Name:		iceweasel-languages
 Version:	22.0
-Release:	1
+Release:	2
 License:	MPL 1.1 or GPL v2+ or LGPL v2.1+
 Group:		I18n
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ach.xpi
@@ -1527,10 +1527,10 @@ unpack() {
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{iceweaseldir}/extensions
+install -d $RPM_BUILD_ROOT%{iceweaseldir}/browser/extensions
 for a in */*.xpi; do
 	basename=$(basename $a .xpi)
-	cp -p $a $RPM_BUILD_ROOT%{iceweaseldir}/extensions/langpack-$basename@firefox.mozilla.org.xpi
+	cp -p $a $RPM_BUILD_ROOT%{iceweaseldir}/browser/extensions/langpack-$basename@firefox.mozilla.org.xpi
 done
 
 %clean
@@ -1538,356 +1538,356 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n iceweasel-lang-ach
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ach@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ach@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-af
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-af@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-af@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ak
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ak@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ak@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ar
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ar@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ar@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-as
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-as@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-as@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ast
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ast@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ast@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-be
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-be@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-be@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-bg
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-bg@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-bg@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-bn
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-bn-BD@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-bn-BD@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-bn_IN
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-bn-IN@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-bn-IN@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-br
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-br@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-br@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-bs
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-bs@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-bs@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ca
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ca@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ca@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-cs
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-cs@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-cs@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-csb
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-csb@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-csb@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-cy
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-cy@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-cy@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-da
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-da@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-da@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-de
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-de@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-de@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-el
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-el@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-el@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-en_GB
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-en-GB@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-en-GB@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-en_US
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-en-US@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-en-US@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-en_ZA
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-en-ZA@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-en-ZA@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-eo
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-eo@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-eo@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-es_AR
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-es-AR@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-es-AR@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-es_CL
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-es-CL@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-es-CL@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-es
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-es-ES@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-es-ES@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-es_MX
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-es-MX@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-es-MX@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-et
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-et@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-et@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-eu
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-eu@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-eu@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-fa
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-fa@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-fa@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ff
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ff@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ff@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-fi
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-fi@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-fi@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-fr
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-fr@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-fr@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-fy
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-fy-NL@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-fy-NL@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ga
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ga-IE@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ga-IE@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-gd
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-gd@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-gd@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-gl
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-gl@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-gl@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-gu
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-gu-IN@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-gu-IN@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-he
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-he@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-he@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-hi
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-hi-IN@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-hi-IN@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-hr
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-hr@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-hr@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-hu
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-hu@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-hu@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-hy
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-hy-AM@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-hy-AM@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-id
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-id@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-id@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-is
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-is@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-is@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-it
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-it@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-it@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ja
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ja@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ja@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-kk
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-kk@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-kk@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-km
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-km@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-km@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-kn
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-kn@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-kn@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ko
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ko@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ko@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ku
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ku@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ku@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-lg
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-lg@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-lg@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-lij
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-lij@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-lij@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-lt
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-lt@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-lt@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-lv
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-lv@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-lv@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-mai
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-mai@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-mai@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-mk
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-mk@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-mk@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ml
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ml@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ml@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-mr
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-mr@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-mr@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-nb
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-nb-NO@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-nb-NO@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-nl
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-nl@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-nl@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-nn
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-nn-NO@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-nn-NO@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-nso
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-nso@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-nso@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-or
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-or@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-or@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-pa
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-pa-IN@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-pa-IN@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-pl
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-pl@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-pl@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-pt_BR
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-pt-BR@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-pt-BR@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-pt
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-pt-PT@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-pt-PT@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-rm
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-rm@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-rm@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ro
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ro@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ro@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ru
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ru@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ru@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-si
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-si@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-si@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-sk
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-sk@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-sk@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-sl
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-sl@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-sl@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-son
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-son@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-son@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-sq
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-sq@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-sq@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-sr
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-sr@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-sr@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-sv
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-sv-SE@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-sv-SE@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ta
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ta@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ta@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-ta_LK
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-ta-LK@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-ta-LK@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-te
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-te@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-te@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-th
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-th@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-th@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-tr
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-tr@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-tr@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-uk
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-uk@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-uk@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-vi
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-vi@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-vi@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-zh_CN
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-zh-CN@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-zh-CN@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-zh_TW
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-zh-TW@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-zh-TW@firefox.mozilla.org.xpi
 
 %files -n iceweasel-lang-zu
 %defattr(644,root,root,755)
-%{iceweaseldir}/extensions/langpack-zu@firefox.mozilla.org.xpi
+%{iceweaseldir}/browser/extensions/langpack-zu@firefox.mozilla.org.xpi
