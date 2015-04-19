@@ -185,7 +185,7 @@ Source82:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version
 Source83:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/uk.xpi
 # Source83-md5:	b9bc2694f6ba425f16e0968eb51893e5
 Source84:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/uz.xpi
-# Source84-md5:	b9bc2694f6ba425f16e0968eb51893e5
+# Source84-md5:	284bcf8df85c41dc1a951e55f1ea7304
 Source85:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/vi.xpi
 # Source85-md5:	802a98106e61e344aaab42b1b82b0b40
 Source86:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/xh.xpi
