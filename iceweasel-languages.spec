@@ -13,7 +13,7 @@ Summary:	Language packs for Iceweasel
 Summary(pl.UTF-8):	Pakiety językowe dla Iceweasela
 Name:		iceweasel-languages
 Version:	37.0.2
-Release:	1
+Release:	2
 License:	MPL v2.0
 Group:		I18n
 Source0:	http://releases.mozilla.org/pub/mozilla.org/firefox/releases/%{version}/linux-i686/xpi/ach.xpi
@@ -1565,7 +1565,7 @@ unpack() {
 	cd ..
 }
 %define __unzip unpack
-%setup -qcT %(seq -f '-a %g' 0 87 | xargs)
+%setup -qcT %(seq -f '-a %g' 0 88 | xargs)
 
 %install
 rm -rf $RPM_BUILD_ROOT
